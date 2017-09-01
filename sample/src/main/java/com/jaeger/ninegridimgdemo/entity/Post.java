@@ -5,11 +5,12 @@ import java.util.List;
 /**
  * Created by Jaeger on 16/2/24.
  *
- * Email: chjie.jaeger@gamil.com
+ * Email: chjie.jaeger@gmail.com
  * GitHub: https://github.com/laobie
  */
 public class Post {
     private String mContent;
+    private int mSpanType;
     private List<String> mImgUrlList;
 
     public Post() {
@@ -19,6 +20,11 @@ public class Post {
         mContent = content;
         mImgUrlList = imgUrlList;
     }
+    public Post(String content,int spanType, List<String> imgUrlList) {
+        mContent = content;
+        mSpanType = spanType;
+        mImgUrlList = imgUrlList;
+    }
 
     public String getContent() {
         return mContent;
@@ -26,6 +32,14 @@ public class Post {
 
     public void setContent(String content) {
         mContent = content;
+    }
+
+    public int getmSpanType() {
+        return mSpanType;
+    }
+
+    public void setmSpanType(int mSpanType) {
+        this.mSpanType = mSpanType;
     }
 
     public List<String> getImgUrlList() {
